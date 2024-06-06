@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <img class="h-28 w-auto" src="{{ ('../../images/ADlogo.png') }}" alt="AD Logo">
+                        <img class="h-28 w-auto" src="{{ ('assets(../../images/ADlogo.png)') }}" alt="AD Logo">
                     </a>
                 </div>
 
@@ -25,11 +25,11 @@
                     </x-nav-link>
 
                     <x-nav-link :href="route('carrito.index')" :active="request()->routeIs('carrito.index')" >
-                        <img src="{{('../../images/carrito.png') }}" alt="Carrito" class="h-8 w-8">
+                        <img src="{{('assets(../../images/carrito.png)') }}" alt="Carrito" class="h-8 w-8">
                     </x-nav-link>
 
                     <x-nav-link :href="route('pedidos.index')" :active="request()->routeIs('pedidos.index')" >
-                        <img src="{{('../../images/mispedidos.png') }}" alt="Pedidos" class="h-8 w-8">
+                        <img src="{{('assets(../../images/mispedidos.png)') }}" alt="Pedidos" class="h-8 w-8">
                     </x-nav-link>
 
                     @if (auth()->check() && auth()->user()->rol === 0)
