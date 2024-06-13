@@ -22,9 +22,9 @@
                     <div class="mb-6">
                         <label for="nivel_juego" class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2">Nivel de Juego</label>
                         <select name="nivel_juego" id="nivel_juego" class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white">
-                            <option value="Principiante" {{ $pala->nivel_juego == 'Principiante' ? 'selected' : '' }}>Principiante</option>
-                            <option value="Intermedio" {{ $pala->nivel_juego == 'Intermedio' ? 'selected' : '' }}>Intermedio</option>
-                            <option value="Avanzado" {{ $pala->nivel_juego == 'Avanzado' ? 'selected' : '' }}>Avanzado</option>
+                            <option value="Principiante" {{ $pala->nivel_juego == 'principiante' ? 'selected' : '' }}>Principiante</option>
+                            <option value="Intermedio" {{ $pala->nivel_juego == 'intermedio' ? 'selected' : '' }}>Intermedio</option>
+                            <option value="Avanzado" {{ $pala->nivel_juego == 'avanzado' ? 'selected' : '' }}>Avanzado</option>
                         </select>
                     </div>
                     <div class="mb-6">
